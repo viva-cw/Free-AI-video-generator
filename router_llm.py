@@ -6,7 +6,7 @@ import os
 # ── 1 · Set up the DeepSeek-compatible client ──────────────────────────────
 client = OpenAI(
     base_url="https://api.deepseek.com",   # ← no “/v1” here – the SDK adds it
-    api_key=os.getenv("DEEPSEEK_API_KEY") or "sk-cd141356de0348989272de4e1a6f2f61",
+    api_key=os.getenv("DEEPSEEK_API_KEY") or "",
 )
 
 DEFAULT_MODEL = "deepseek-reasoner"            # or deepseek-reasoner
